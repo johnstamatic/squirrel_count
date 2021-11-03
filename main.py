@@ -1,5 +1,3 @@
-
-
 import pandas
 
 # using valuecounts method
@@ -7,6 +5,7 @@ data = pandas.read_csv("2018_Central_Park_Squirrel_Census_-_Squirrel_Data.csv")
 gray = data["Primary Fur Color"].value_counts()
 new_file = pandas.DataFrame(gray)
 new_file.to_csv("squirrel_count.csv")
+print("squirrel_count.csv has been saved.")
 
 #using class solution
 data = pandas.read_csv("2018_Central_Park_Squirrel_Census_-_Squirrel_Data.csv")
@@ -20,6 +19,7 @@ data_dict = {
 }
 df = pandas.DataFrame(data_dict)
 df.to_csv("squirrel_count2.csv")
+print("squirrel_count2.csv has been saved.")
 
 # original project code without list comprehension
 
